@@ -79,13 +79,17 @@ class rules_engine(object):
 			self.results["s302"]["ts_row"] = "failed"
 		else:
 			self.results["s302"]["ts_row"] = "passed"
-	"""	
-	S303 The reported Federal Agency; Federal Taxpayer Identification Number; and Legal Entity Identifier must match the Federal Agency; Federal Taxpayer Identification Number; and Legal Entity Identifier for the financial institution for which you are filing. Please confirm the information below and update your file accordingly.
-	1) The correct financial institution was at the start of the filing; and
-	2) The correct file was uploaded; and
-	3) The Federal Agency, Federal Taxpayer Identification Number, and Legal Entity Identifier are reported correctly in the file.
+	
+	def s303(self):
+		"""The reported Federal Agency; Federal Taxpayer Identification Number; and Legal Entity Identifier must match the Federal Agency;
+		Federal Taxpayer Identification Number; and Legal Entity Identifier for the financial institution for which you are filing. """
+		#checks against panel?
+		#agency
+		#tax ID
+		#lei
+		pass
 
-	S304 The reported Total Number of Entries Contained in Submission does not match the total number of LARs in the HMDA file. Please update your file accordingly.
+	"""S304 The reported Total Number of Entries Contained in Submission does not match the total number of LARs in the HMDA file. Please update your file accordingly.
 	
 	V601 The following data fields are required, and cannot be left blank. A blank value(s) was provided. Please review the information below and update your file accordingly.
 	1) Financial Institution Name;
